@@ -1,0 +1,24 @@
+{
+  "name": "ej_tiempo_9_12",
+  "version": "1.0.0",
+  "description": "Ejercicio con tiempo final",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josetruck/ej_tiempo_9_12.git"
+  },
+  "author": "Jose Angel Contreras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josetruck/ej_tiempo_9_12/issues"
+  },
+  "homepage": "https://github.com/Josetruck/ej_tiempo_9_12#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.12.1",
+    "mongoose": "^6.8.0"
+  }
+}
