@@ -33,7 +33,7 @@ const metaInfo = async (method, info, endpoint) => {
   let datos = {
     method: method,
     body: JSON.stringify(info),
-    mode: "CORS",
+    mode: "cors",
     headers: {
       "Access-Control-Allow-Origin": "*",
       "Content-type": "application/json",
@@ -48,21 +48,24 @@ const metaInfo = async (method, info, endpoint) => {
 };
 return (
       <div className="App">
-        <form onSubmit={handleSubmit}>
+        <form action="http://127.0.0.1:5000/insert" method="post" onSubmit={handleSubmit}>
           <input
             type="text"
+            name= "titulo"
             value={titulo}
             placeholder="Titulo"
             onChange={(e) => setTitulo(e.target.value)}
           />
           <input
             type="text"
+            name="genero"
             value={genero}
             placeholder="Genero"
             onChange={(e) => setGenero(e.target.value)}
           />
           <input
             type="text"
+            name="director"
             value={director}
             placeholder="Director"
             onChange={(e) => setDirector(e.target.value)}
